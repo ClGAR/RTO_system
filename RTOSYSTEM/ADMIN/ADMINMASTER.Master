@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ADMINMASTER.master.cs" Inherits="RTOSYSTEM.ADMIN.ADMINMASTER" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <link href="../Stylesheet1.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        window.history.forward();
+        function noBack()
+        {
+            window.history.forward;
+       }
+    </script>
+</head>
+<body background="image/16668.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Bold="True">
+                    <StaticMenuStyle BackColor="#FF9933" BorderStyle="Solid" />
+                    <StaticSelectedStyle Font-Bold="True" BackColor="#CCFF99" BorderColor="Black" 
+                            BorderStyle="Inset" />
+                    <StaticMenuItemStyle BackColor="Gray" BorderColor="Gray" Font-Bold="True" 
+                        ForeColor="Black" HorizontalPadding="62px" Font-Size="Large" />
+                    <DynamicHoverStyle BackColor="#999999" BorderColor="Black" BorderWidth="1px" 
+                            BorderStyle="Inset" />
+                    <DynamicMenuStyle BackColor="#CCCCCC" BorderColor="Black" BorderStyle="Solid" 
+                        BorderWidth="1px" Height="40px" />
+                    <DynamicSelectedStyle BackColor="#FF9933" />
+                        <DynamicMenuItemStyle BackColor="White" BorderColor="Black" BorderStyle="Inset" 
+                            HorizontalPadding="100px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/ADMIN/Adminhome.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Licence" Value="Licence" NavigateUrl="~/ADMIN/Licence.aspx">
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Duplicate Licence" Value="Duplicate Licence" 
+                            NavigateUrl="~/ADMIN/Duplicate_Licence.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="User Details" Value="User Details" 
+                            NavigateUrl="~/ADMIN/User_Details.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Test" Value="Test" 
+                            NavigateUrl="~/ADMIN/SETTEST.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Vehicle" Value="Vehicle" NavigateUrl="~/ADMIN/Vehicle.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/HOME/homepage.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

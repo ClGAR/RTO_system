@@ -1,0 +1,48 @@
+﻿.txtfname
+{
+	border:none;
+	border-bottom:3px solid #fff;
+	outline:none;
+	height:28px;
+	color:#fff;
+	font-size:16px;
+	background-color:Transparent;
+}
+.transbox
+{
+	background-color: #000000;
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+	border-radius:15px;
+}
+.button
+{
+	
+	border-radius:15px;
+}
+.button:hover
+{
+	background-color: #000000;
+	box-shadow: 0 5px #666;
+	transform: TranslaterY(4px);
+	color: #FFFFFF;
+}
+.footer
+{
+	border-radius: 15px;
+	background-color: #000000;
+	opacity: 0.6;
+	filter: alpha(opacity=50);
+}
+.border
+{
+	border-radius:15px;
+}
+.menu
+{
+	border-radius:15px;
+}
+.img
+{
+	border-radius:50%;
+}

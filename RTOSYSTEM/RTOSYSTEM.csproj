@@ -1,0 +1,468 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{531439A2-8F54-44DC-96C2-3D193BB996A8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RTOSYSTEM</RootNamespace>
+    <AssemblyName>RTOSYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN\ADMINMASTER.Master.cs">
+      <DependentUpon>ADMINMASTER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\ADMINMASTER.Master.designer.cs">
+      <DependentUpon>ADMINMASTER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Adminhome.aspx.cs">
+      <DependentUpon>Adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Adminhome.aspx.designer.cs">
+      <DependentUpon>Adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Licence.aspx.cs">
+      <DependentUpon>Licence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Licence.aspx.designer.cs">
+      <DependentUpon>Licence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Duplicate_Licence.aspx.cs">
+      <DependentUpon>Duplicate_Licence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Duplicate_Licence.aspx.designer.cs">
+      <DependentUpon>Duplicate_Licence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\User_Details.aspx.cs">
+      <DependentUpon>User_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\User_Details.aspx.designer.cs">
+      <DependentUpon>User_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\Vehicle.aspx.cs">
+      <DependentUpon>Vehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\Vehicle.aspx.designer.cs">
+      <DependentUpon>Vehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\SETTEST.aspx.cs">
+      <DependentUpon>SETTEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\SETTEST.aspx.designer.cs">
+      <DependentUpon>SETTEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demo.aspx.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demo.aspx.designer.cs">
+      <DependentUpon>Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\HOMEMASTER.Master.cs">
+      <DependentUpon>HOMEMASTER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\HOMEMASTER.Master.designer.cs">
+      <DependentUpon>HOMEMASTER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\Admin_login.aspx.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\Admin_login.aspx.designer.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\User_Login.aspx.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\User_Login.aspx.designer.cs">
+      <DependentUpon>User_Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\User_Registration.aspx.cs">
+      <DependentUpon>User_Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\User_Registration.aspx.designer.cs">
+      <DependentUpon>User_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\Admin_Registration.aspx.cs">
+      <DependentUpon>Admin_Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\Admin_Registration.aspx.designer.cs">
+      <DependentUpon>Admin_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\Admin_Forgetpwd.aspx.cs">
+      <DependentUpon>Admin_Forgetpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\Admin_Forgetpwd.aspx.designer.cs">
+      <DependentUpon>Admin_Forgetpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\User_Forgetpwd.aspx.cs">
+      <DependentUpon>User_Forgetpwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\User_Forgetpwd.aspx.designer.cs">
+      <DependentUpon>User_Forgetpwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\Search_vehicle.aspx.cs">
+      <DependentUpon>Search_vehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\Search_vehicle.aspx.designer.cs">
+      <DependentUpon>Search_vehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\contact _us.aspx.cs">
+      <DependentUpon>contact _us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\contact _us.aspx.designer.cs">
+      <DependentUpon>contact _us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\user_updatepwd.aspx.cs">
+      <DependentUpon>user_updatepwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\user_updatepwd.aspx.designer.cs">
+      <DependentUpon>user_updatepwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME\admin_updatepwd.aspx.cs">
+      <DependentUpon>admin_updatepwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME\admin_updatepwd.aspx.designer.cs">
+      <DependentUpon>admin_updatepwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="USER\USERMASTER.Master.cs">
+      <DependentUpon>USERMASTER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\USERMASTER.Master.designer.cs">
+      <DependentUpon>USERMASTER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="USER\UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Vehicle_Registration.aspx.cs">
+      <DependentUpon>Vehicle_Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Vehicle_Registration.aspx.designer.cs">
+      <DependentUpon>Vehicle_Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Vehicle_Trasfer.aspx.cs">
+      <DependentUpon>Vehicle_Trasfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Vehicle_Trasfer.aspx.designer.cs">
+      <DependentUpon>Vehicle_Trasfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Driving_License.aspx.cs">
+      <DependentUpon>Driving_License.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Driving_License.aspx.designer.cs">
+      <DependentUpon>Driving_License.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Dupicate_License.aspx.cs">
+      <DependentUpon>Dupicate_License.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Dupicate_License.aspx.designer.cs">
+      <DependentUpon>Dupicate_License.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Renew_Driving_License.aspx.cs">
+      <DependentUpon>Renew_Driving_License.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Renew_Driving_License.aspx.designer.cs">
+      <DependentUpon>Renew_Driving_License.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Taxtion.aspx.cs">
+      <DependentUpon>Taxtion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Taxtion.aspx.designer.cs">
+      <DependentUpon>Taxtion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\viewdrivinglicense.aspx.cs">
+      <DependentUpon>viewdrivinglicense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\viewdrivinglicense.aspx.designer.cs">
+      <DependentUpon>viewdrivinglicense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\RTO_TEST.aspx.cs">
+      <DependentUpon>RTO_TEST.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\RTO_TEST.aspx.designer.cs">
+      <DependentUpon>RTO_TEST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\viewlicense.aspx.cs">
+      <DependentUpon>viewlicense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\viewlicense.aspx.designer.cs">
+      <DependentUpon>viewlicense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\information.aspx.cs">
+      <DependentUpon>information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\information.aspx.designer.cs">
+      <DependentUpon>information.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Setp_driving_license.aspx.cs">
+      <DependentUpon>Setp_driving_license.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Setp_driving_license.aspx.designer.cs">
+      <DependentUpon>Setp_driving_license.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Result.aspx.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Result.aspx.designer.cs">
+      <DependentUpon>Result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Step_Duplicate.aspx.cs">
+      <DependentUpon>Step_Duplicate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Step_Duplicate.aspx.designer.cs">
+      <DependentUpon>Step_Duplicate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\step_renewlicense.aspx.cs">
+      <DependentUpon>step_renewlicense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\step_renewlicense.aspx.designer.cs">
+      <DependentUpon>step_renewlicense.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USER\Step_of_vehicle_reg.aspx.cs">
+      <DependentUpon>Step_of_vehicle_reg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USER\Step_of_vehicle_reg.aspx.designer.cs">
+      <DependentUpon>Step_of_vehicle_reg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HOME\HOMEMASTER.Master" />
+    <Content Include="HOME\homepage.aspx" />
+    <Content Include="HOME\Images\1.jpg" />
+    <Content Include="HOME\Images\2.jpg" />
+    <Content Include="HOME\Images\img.jpg" />
+    <Content Include="HOME\Admin_login.aspx" />
+    <Content Include="HOME\User_Login.aspx" />
+    <Content Include="HOME\User_Registration.aspx" />
+    <Content Include="HOME\Admin_Registration.aspx" />
+    <Content Include="HOME\Admin_Forgetpwd.aspx" />
+    <Content Include="HOME\User_Forgetpwd.aspx" />
+    <Content Include="HOME\Search_vehicle.aspx" />
+    <Content Include="HOME\contact _us.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="USER\USERMASTER.Master" />
+    <Content Include="USER\UserHome.aspx" />
+    <Content Include="USER\Services.aspx" />
+    <Content Include="USER\Vehicle_Registration.aspx" />
+    <Content Include="USER\Vehicle_Trasfer.aspx" />
+    <Content Include="USER\Driving_License.aspx" />
+    <Content Include="USER\Dupicate_License.aspx" />
+    <Content Include="USER\Renew_Driving_License.aspx" />
+    <Content Include="USER\Taxtion.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADMIN\ADMINMASTER.Master" />
+    <Content Include="ADMIN\Adminhome.aspx" />
+    <Content Include="ADMIN\image\16668.jpg" />
+    <Content Include="ADMIN\image\design.png" />
+    <Content Include="ADMIN\image\information.png" />
+    <Content Include="ADMIN\Licence.aspx" />
+    <Content Include="ADMIN\Duplicate_Licence.aspx" />
+    <Content Include="ADMIN\User_Details.aspx" />
+    <Content Include="ADMIN\Vehicle.aspx" />
+    <Content Include="ADMIN\SETTEST.aspx" />
+    <Content Include="App_Data\RTODATABSE\RTO_DATABASE.mdf">
+    </Content>
+    <Content Include="App_Data\RTODATABSE\RTO_DATABASE_log.ldf">
+      <DependentUpon>RTO_DATABASE.mdf</DependentUpon>
+    </Content>
+    <Content Include="Demo.aspx" />
+    <Content Include="homepage\1.jpg" />
+    <Content Include="homepage\3.jpg" />
+    <Content Include="homepage\2.jpg" />
+    <Content Include="HOME\Images\48d62bd-phpYcG0U8.jpg" />
+    <Content Include="HOME\Images\contactus.png" />
+    <Content Include="HOME\Images\data=vMDVYuBzrv1SdXRHdHdTZp0OCqbpnlM5duFwa4YsV2hFDNzgxShPKavWt5DChN1aetHObqC0PivYMXH4S-D2QXekSUVyj5irxlZE61vAL_2UPaRsLWRMngzAvcjdaa6fOKhKXjJd3h4GXJi-3-GsbGWG8EVBrC0WpHqsv0M1ZKymi3Jom6gGGBRHafZi0w.png" />
+    <Content Include="HOME\Images\office-computer-bg.jpg" />
+    <Content Include="HOME\Images\regional-transport-office-pal-bhatha-surat-government-organisations-dzrf2.jpg" />
+    <Content Include="HOME\Images\rtologo.png" />
+    <Content Include="HOME\user_updatepwd.aspx" />
+    <Content Include="HOME\admin_updatepwd.aspx" />
+    <Content Include="Stylesheet1.css" />
+    <Content Include="USER\image\1.png" />
+    <Content Include="USER\image\232.png" />
+    <Content Include="USER\image\324.png" />
+    <Content Include="USER\image\contact-information.png" />
+    <Content Include="USER\image\cv.png" />
+    <Content Include="USER\image\documents.png" />
+    <Content Include="USER\image\driver-license %281%29.png" />
+    <Content Include="USER\image\Driving-License.jpg" />
+    <Content Include="USER\image\driving-license.png" />
+    <Content Include="USER\image\feedback %281%29.png" />
+    <Content Include="USER\image\images %281%29.png" />
+    <Content Include="USER\image\loser.png" />
+    <Content Include="USER\image\office-computer-bg.jpg" />
+    <Content Include="USER\image\personal-information %282%29.png" />
+    <Content Include="USER\image\personal.png" />
+    <Content Include="USER\image\username.png" />
+    <Content Include="USER\image\visa-photo-sample.jpg" />
+    <Content Include="USER\image\winner eng.png" />
+    <Content Include="USER\image\witness.png" />
+    <Content Include="USER\viewdrivinglicense.aspx" />
+    <Content Include="USER\RTO_TEST.aspx" />
+    <Content Include="USER\Payment.aspx" />
+    <Content Include="USER\viewlicense.aspx" />
+    <Content Include="USER\Feedback.aspx" />
+    <Content Include="USER\information.aspx" />
+    <Content Include="USER\Setp_driving_license.aspx" />
+    <Content Include="USER\Result.aspx" />
+    <Content Include="USER\Step_Duplicate.aspx" />
+    <Content Include="USER\step_renewlicense.aspx" />
+    <Content Include="USER\Step_of_vehicle_reg.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51343</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
